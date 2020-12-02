@@ -1,0 +1,39 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--background : #fff;
+  --color: #000;
+  --mainbgcolor : #6c63ff;
+}
+body,html{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-image: linear-gradient(to bottom, #ffffff 30%, #88d9ff, #24206c, #222 80%);
+  color: #333;
+  background-size: 100% 400%;
+  background-position: 100% 0%;
+  transition: all 1s;
+}
+body.night {
+  background-position: 100% 100%;
+  color: #fff;
+}
+/*======================= Particle Setup========================*/
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}

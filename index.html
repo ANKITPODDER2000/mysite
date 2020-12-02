@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+<body id="particles-js">
+     <!--============================Navbar SetUp Html==========================-->
+    <!--NavbarSetUp-->
+    <nav>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="http://iictmsl.in/envisage/" target="_blank">ENVISAGE</a></li>
+                <li><a href="activity.html">ACTIVITY</a></li>
+                <li><a href="startup.html">OUR STARTUP</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="faculty.html">FACULTY</a></li>
+                <li><a href="alumni.html">ALUMNI</a></li>
+                <li class="active"><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
+
+            </ul>
+        </div>
+    </nav>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="index.html">
+                <i class="fas fa-laptop-code"></i>
+            </a>
+        </div>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+           
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    
+    <section class="wrapper" id="main">
+        <section class="home">
+            <div class="left-container">
+                <h3 data-aos="fade-right" data-aos-delay="50">Hi I'm</h3>
+                <h1 data-aos="fade-right" data-aos-delay="100"><span>A</span>nkit <span>P</span>odder</h1>
+                <h2 id="ban" data-aos="fade-right" data-aos-delay="150"><span id="typed"></span></h2>
+                <p data-aos="fade-right" data-aos-delay="200"><a href=""><i class="fas fa-envelope-open"></i> ankitpodder0211@gmail.com</a></p>
+                <p data-aos="fade-right" data-aos-delay="250"><a href=""><i class="fas fa-phone-volume"></i>  +91-8622988250</a></p>
+                <p data-aos="fade-right" data-aos-delay="300"><a href=""><i class="fas fa-map-marker-alt"></i>  Lake Town , Kolkata , West Bengal</a></p>
+                <div class="links">
+                    <a href="" data-aos="fade-right" data-aos-delay="450"><i class="fab fa-github"></i></a>
+                    <a href="" data-aos="fade-right" data-aos-delay="400"><i class="fab fa-linkedin"></i></a>
+                    <a href="" data-aos="fade-right" data-aos-delay="350"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="right-container">
+                <img data-aos="fade-left" src="./svg/hm1.svg" alt="home pics">
+            </div>
+        </section>
+    </section>
+    
+
+
+    <script src="typed.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/particles.js"></script>
+    <script src="./js/home.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let typed = new Typed("#typed", {
+            strings: [
+                "^500D^250E^150S^150I^150G^150N^150E^150R^150.^500",
+                "^500D^250E^150V^150E^150L^150O^150P^150E^150R^150.^500",
+                "^500M^250L^150 ^150P^150R^150A^150C^150T^150I^150T^150O^150N^150E^150R^150.^500"
+            ],
+            loop: true
+        });
+    </script>
+</body>
+</html>

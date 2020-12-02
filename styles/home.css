@@ -1,0 +1,133 @@
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home .left-container{
+    color: var(--color);
+    position: relative;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .left-container h3{
+    font-size: 35px;
+    display: inline;
+    width: fit-content;
+    padding: 7px 25px;
+    background: var(--mainbgcolor);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    color: #fff;
+    margin-bottom: 6px;
+    word-spacing: 10px;
+}
+.home .left-container h1{
+    font-size: 50px;
+    word-spacing: 15px;
+    margin-bottom: 8px;
+}
+.home .left-container h1 span{
+    font-size: 70px;
+    letter-spacing: 4px;
+    color: var(--mainbgcolor);
+}
+.home .left-container h2{
+    font-size: 28px;
+    letter-spacing: 2px;
+    height: 60px;
+}
+.home .left-container h2::first-letter{
+    color:  var(--mainbgcolor);
+}
+.home .left-container p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.home .left-container p a{
+    text-decoration: none;
+    color: var(--color);
+}
+.home .left-container p a i{
+    margin-right: 20px;
+}
+.home .left-container .links{
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.home .left-container .links a{
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--color);
+}
+.home .left-container .links a:nth-child(1){
+    margin-left: 0;
+}
+
+
+.home .right-container{
+    position: relative;
+    width: 400px;
+}
+.home .right-container img{
+    position: relative;
+    width: 100%;
+}
+
+/*===========================Responsive==================*/
+@media screen and (max-width : 1110px){
+    .home{
+        padding-top: 90px;
+        flex-direction: column;
+    }
+    .home .left-container{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width : 580px){
+    .home{
+        padding-bottom: 40px;
+    }
+    .home .left-container h3{
+        font-size: 20px;
+        padding: 4px 16px;
+        border-top-left-radius: 40px;
+    }
+    .home .left-container h1{
+        font-size: 26px;
+    }
+    .home .left-container h2{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .home .left-container h1 span{
+        font-size: 50px;
+    }
+    .home .left-container p{
+        font-size: 14px;
+    }
+    .home .left-container .links{
+        margin-top: 10px;
+    }
+    .home .right-container img{
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width : 340px){
+    .home .left-container p{
+        font-size: 12px;
+    }
+    .home .left-container p a i{
+        font-size: 16px;
+    }
+}
