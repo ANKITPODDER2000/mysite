@@ -1,0 +1,139 @@
+.edu-banner{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.edu-banner img{
+    position: relative;
+    width: 150px;
+}
+.edu-banner h1{
+    font-size: 34px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.edu-banner svg{
+    transition: 0.5s;
+    fill: var(--color);
+}
+.education{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.education .content{
+    position: relative;
+    width: 300px;
+
+}
+.education .content .edu-period{
+    position: relative;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+}
+.education .content .edu-period h1{
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+.education .content .edu-period svg{
+    fill: var(--color);
+}
+.education .content .edu-period p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.education .content .edu-period p span{
+    font-weight: bolder;
+}
+.education .content .edu-period p:nth-child(6){
+    margin-bottom: 7px;
+}
+.education .content .edu-period a{
+    padding: 6px 14px;
+    display: inline-block;
+    text-decoration: none;
+    color:var(--color);
+    position: relative;
+    font-weight: bolder;
+}
+.education .content .edu-period a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainbgcolor);
+    clip-path: polygon(0 0, 53% 0, 29% 100%, 0% 100%);
+    z-index: -1;
+    transition: 0.5s;
+}
+.education .content .edu-period a:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.education .content .edu-period .box1{
+    position: absolute;
+    left: 0;
+    top: 19px;
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+}
+.education .content .edu-period .box2{
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background: var(--color);
+    left: 4.5px;
+    top: 40px;
+}
+.education img{
+    position: relative;
+    width: 420px;
+}
+
+@media screen and (max-width : 840px){
+    .education img{
+        display: none;
+    }
+}
+@media screen and (max-width : 360px){
+    #edu{
+        margin-bottom: 30px;
+    }
+    .education .content .edu-period{
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #main > div.education > div > section h1{
+        font-size: 20px;
+    }
+    #main > div.education > div > section p{
+        font-size: 15px;
+    }
+    .education .content .edu-period .box1{
+        width: 8px;
+        height: 8px;
+    }
+    .education .content .edu-period .box2{
+        top: 35px;
+        left: 3.5px;
+    }
+}
+#underline{
+    width: 70px;
+}
+body.night #underline{
+    filter: invert(1);
+}
