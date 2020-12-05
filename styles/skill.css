@@ -1,0 +1,97 @@
+.skill-header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-header h1{
+    font-size: 34px;
+}
+.skill-header img#underline{
+    position: relative;
+    width: 70px;
+}
+body.night .skill-header img#underline{
+    filter: invert(1);
+}
+
+/*====================================================*/
+
+.skill{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 7.5%;
+}
+.skill .skill-con{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    box-shadow:  5px 5px 10px #dfdfdf, 
+             -5px -5px 10px #ffffff;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 26px;
+}
+.skill .skill-con:hover{
+    font-size: 36px;
+}
+@media screen and (max-width : 1175px){
+    .skill{
+        flex-direction: column;
+        padding: 30px 0 60px;
+    }
+    .skill .skill-con{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width : 340px){
+    .skill .skill-con{
+        width: 260px;
+    }
+}
+body.night .skill .skill-con{
+    background-color: rgba(68, 66, 66, 0.842);
+    box-shadow:  5px 5px 15px #fff4,
+                 -5px -5px 15px #fff3;
+}
+.skill .skill-con::before{
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f5f5f5b9;
+    z-index: 0;
+    transition: 1.5s;
+}
+body.night .skill .skill-con::before{
+    background-color: rgba(68, 66, 66);
+}
+.skill .skill-con .chart{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto 25px;
+    z-index: 100;
+}
+.skill .skill-con h2{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    font-size: 22px;
+    word-spacing: 4px;
+}
+.skill .skill-con .chart canvas{
+    position: absolute;
+}

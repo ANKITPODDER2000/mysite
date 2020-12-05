@@ -51,6 +51,9 @@
     font-size: 18px;
     line-height: 30px;
 }
+.education .content .edu-period img{
+    width: 60px;
+}
 .education .content .edu-period p span{
     font-weight: bolder;
 }

@@ -9,6 +9,7 @@
 	--background : #fff;
   --color: #000;
   --mainbgcolor : #6c63ff;
+  --strokebackground : #fff;
 }
 body,html{
     width: 100%;
