@@ -11,7 +11,8 @@
     height: 80px;
     z-index: 9999999;
     transition: 0.75s;
-    background: var(--background);
+    background: #fff1;
+    backdrop-filter: blur(5px);
     padding: 0 80px;
     display: flex;
     justify-content: space-between;

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/edu.css">
     <link rel="stylesheet" href="./styles/skill.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/jarallax.css">
     <title>Document</title>
 </head>
 
@@ -128,18 +130,56 @@
             <img class="day-underline" data-aos="fade-left" src="./svg/underline.svg" id="underline">
         </div>
         <div class="skill">
-            <div class="skill-con" data-aos="fade-right">
+            <div class="skill-con box" data-aos="fade-right">
                 <div class="chart" data-percent="73">73%</div>
                 <h2>WEB DESIGNING</h2>
             </div>
-            <div class="skill-con" data-aos="fade-up">
+            <div class="skill-con box" data-aos="fade-up">
                 <div class="chart" data-percent="58">58%</div>
                 <h2>MACHINE LEARNING</h2>
             </div>
-            <div class="skill-con" data-aos="fade-left">
+            <div class="skill-con box" data-aos="fade-left">
                 <div class="chart" data-percent="60">60%</div>
                 <h2>CODING</h2>
             </div>
+        </div>
+        <!--Project Section-->
+        <div class="skill-header" style="margin-bottom: 70px;">
+            <h1 data-aos="fade-right">PROJECTS</h1>
+            <img class="day-underline" data-aos="fade-left" src="./svg/underline.svg" id="underline">
+        </div>
+        <div class="project">
+            <div class="box">
+                <h1>01</h1>
+                <h1>CAT & DOG</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                     optio. Ducimus repellat dolorem error. Aperiam expedita corrupti 
+                     porro quam rem?
+                </p>
+                <a href="#">CHECK IT!</a>
+            </div>
+            <div class="box">
+                <h1>02</h1>
+                <h1>OBJECT DETECTION</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                     optio. Ducimus repellat dolorem error. Aperiam expedita corrupti 
+                     porro quam rem?
+                </p>
+                <a href="#">CHECK IT!</a>
+            </div>
+            <div class="box">
+                <h1>03</h1>
+                <h1>COLOR PICKER</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                     optio. Ducimus repellat dolorem error. Aperiam expedita corrupti 
+                     porro quam rem?
+                </p>
+                <a href="#">CHECK IT!</a>
+            </div>
+
+        </div>
+
+            
         </div>
     </section>
 
@@ -152,6 +192,9 @@
     <script src="./js/home.js"></script>
     <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/easypiechart.js"></script>
+    <script src="./js/jarallax.js"></script>
+    <script src="./js/jarallax-element.js"></script>
+    <script src="./js/vanilla-tilt.js"></script>
     <script>
         AOS.init();
         let typed = new Typed("#typed", {
@@ -161,6 +204,10 @@
                 "^500M^250L^150 ^150P^150R^150A^150C^150T^150I^150T^150O^150N^150E^150R^150.^500"
             ],
             loop: true
+        });
+
+        jarallax(document.querySelectorAll('.jarallax'), {
+                speed: 0.5
         });
 
 
@@ -175,6 +222,10 @@
                     animate : 2000
                 });
             });
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400
+        });
     </script>
 </body>
 
