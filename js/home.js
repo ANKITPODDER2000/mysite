@@ -123,11 +123,11 @@ particlesJS('particles-js', {
 
 
 
-//Color Change
-let day = true;
-$("#day-night").click(() => {
+
+const chmode = () => {
     $('body').toggleClass('night');
     day = !day;
+    window.localStorage.setItem('mode', JSON.stringify(day));
     if(!day){
         document.documentElement.style.setProperty('--color', '#fff');
         document.documentElement.style.setProperty('--background', '#222');
@@ -138,22 +138,15 @@ $("#day-night").click(() => {
         $('#day-night').addClass("fas");
         $('#day-night').addClass("fa-lightbulb");
         $(".fixedbar").addClass('night');
-        $("#main > div.logo > div > img").attr("src","./image/IIC2_night.png");
-        $("#particles-js > div.fixedbar > div:nth-child(1) > a > img").attr("src","./image/IIC_night.png");
-        $("#main > section > img").attr('src','./image/iiccounternight.png')
     }else{
         document.documentElement.style.setProperty('--color', '#000');
         document.documentElement.style.setProperty('--background', '#fff');
         color = "#000";
-
         $('#day-night').addClass("fa-moon");
         $('#day-night').addClass("far");
         $('#day-night').removeClass("fas");
         $('#day-night').removeClass("fa-lightbulb");
         $(".fixedbar").removeClass('night');
-        $("#main > div.logo > div > img").attr("src","./image/IIC2.png");
-        $("#particles-js > div.fixedbar > div:nth-child(1) > a > img").attr("src","./image/IIC.png");
-        $("#main > section > img").attr('src','./image/iiccounterday.png')
     }
     particlesJS('particles-js', {
         "particles": {
@@ -266,5 +259,22 @@ $("#day-night").click(() => {
         "retina_detect": true
     });
     //$(".fixedbar div a img").attr("src","")
-});
+};
+
+
+//Color Change
+let day = JSON.parse(window.localStorage.getItem('mode'));
+
+if (day === null) {
+    // console.log("HIII");
+    day = true;
+}
+else {
+    if (!day) {
+        // console.log("HIIIIIIII!!!");
+        day = true;
+        chmode();
+    }
+}
+
 console.clear();
