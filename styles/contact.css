@@ -1,0 +1,201 @@
+.contact{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    padding: 0 0 100px;
+}
+.contact .form-conainer{
+    position: relative;
+    width: 1000px;
+    height: 530px;
+    display: block;
+    margin: 0 auto;
+}
+.contact .form-conainer .details{
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    background: #6c63ff;
+    z-index: 2;
+    left: 0;
+    top: 50%;
+    transform: translate(-50px , -50%);
+    color: #fff;
+    padding: 20px 25px;
+}
+.contact .form-conainer .details > *{
+    position: relative;
+    z-index: 2;
+}
+.contact .form-conainer .details::before{
+    position : absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background : #5c54fc;
+    z-index: 0;
+}
+.contact .form-conainer .details p{
+    margin-bottom: 30px;
+}
+.contact .form-conainer .details svg{
+    fill: #fff;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+.contact .form-conainer .details .con{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact .form-conainer .details .con > *{
+    margin: 0;
+}
+.contact .form-conainer .details .con i{
+    font-size: 18px;
+    margin-right: 20px;
+    color: #fff9;
+}
+.contact .form-conainer .details .con p,
+.contact .form-conainer .details .con a{
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 20px;
+    color: #fff8;
+}
+.contact .form-conainer form{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #0001;
+    backdrop-filter: blur(5px);
+    transform: translateX(100px);
+    padding: 30px 80px 20px 180px;
+}
+body.night .contact .form-conainer form{
+    background: #fff1;
+}
+.contact .form-conainer form h1{
+    color: #6c63ff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.contact .form-conainer form > textarea{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #000;
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    line-height: 16px;
+    color: #000;
+    background: #0003;
+}
+body.night .contact .form-conainer form > textarea{
+    border-color: #fff;
+    color: #fff;
+}
+.contact .form-conainer form > label{
+    position: relative !important;
+    margin-top: 0px !important;
+    font-size: 14px;
+    color: #6c63ff !important;
+}
+.contact .form-conainer form div.name{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0 30px;
+}
+.contact .form-conainer form div.name div.field{
+    position: relative;
+    line-height: 40px;
+    width: 45%;
+}
+.contact .form-conainer form div.name div.field input{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-bottom: 1.5px solid #000;
+    color: #000;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+body.night .contact .form-conainer form div.name div.field input{
+    color: #fff;
+    border-color: #fff;
+}
+.contact .form-conainer form div.name div.field label{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000;
+    font-size: 17px;
+    line-height: 17px;
+    transition: 0.5s;
+}
+body.night .contact .form-conainer form div.name div.field label{
+    color: #fff;
+}
+.contact .form-conainer form div.name div.field input:focus ~ label,
+.contact .form-conainer form div.name div.field input:valid ~ label{
+    left: 0;
+    bottom: 40px;
+    font-size: 14px;
+    color: #6c63ff;
+}
+.contact .form-conainer .details .link-daat{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    /* margin-top: 65px; */
+}
+.contact .form-conainer .details .link-daat i{
+    text-decoration: none;
+    color: #fff9;
+    margin-right: 25px;
+    transition: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact .form-conainer form button{
+    padding: 10px 35px;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid #6c63ff;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c63ff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.contact .form-conainer form button:hover{
+    background: #5c54fc;
+    color: #fff;
+}
+.contact .form-conainer .details .link-daat i:hover{
+    color: #fff;
+}
