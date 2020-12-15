@@ -28,6 +28,7 @@
                 <li><a href="#edu">EDUCATION</a></li>
                 <li><a href="#skill">SKILL</a></li>
                 <li><a href="#project">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <div class="marker"></div>
 
             </ul>
@@ -144,7 +145,7 @@
             <img class="day-underline" data-aos="fade-left" src="./svg/underline.svg" id="underline">
         </div>
         <div class="project">
-            <div class="box">
+            <div class="box" data-aos="flip-left">
                 <h1>01</h1>
                 <h1>CAT & DOG</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -153,7 +154,7 @@
                 </p>
                 <a href="https://ankitpodder2000.github.io/cat_dog_detect/" target="_blank">CHECK IT!</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="flip-right">
                 <h1>02</h1>
                 <h1>TIC TAC TOE</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -162,7 +163,7 @@
                 </p>
                 <a href="https://ankitpodder2000.github.io/tictactoe/" target="_blank">CHECK IT!</a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="flip-left">
                 <h1>03</h1>
                 <h1>COLOR PICKER</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
@@ -173,7 +174,7 @@
             </div>
 
         </div>
-        <div class="skill-header" id="project" style="margin-bottom: 50px;">
+        <div class="skill-header" id="contact" style="margin-bottom: 50px;">
             <h1 data-aos="fade-right">CONTACT</h1>
             <img class="day-underline" data-aos="fade-left" src="./svg/underline.svg" id="underline">
         </div>
@@ -197,42 +198,45 @@
                         <i class="fas fa-mobile"></i>
                         <a href="tel:8622988250">8622988250</a>
                     </div>
-                    <div class="link-daat">
-                        <a href="" ><i class="fab fa-github"></i></a>
-                        <a href="" ><i class="fab fa-linkedin"></i></a>
-                        <a href="" ><i class="fab fa-facebook"></i></a>
+                    <div class="links">
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
-                <form action="">
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" 
+                    onload="if(submitted){window.location('/')}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeMQGHzu25_X-IGsGsGRkf063ChxRU8FlH28pnnv4YkjgJStw/formResponse" target="hidden_iframe" onsubmit="return true">
                     <h1>Send a Message</h1>
                     <div class="name" style="margin-top: 0px;">
                         <div class="field">
-                            <input type="text" required="">
+                            <input type="text"  name="entry.549361753" required="">
                             <label>First Name</label>
                         </div>
                         <div class="field">
-                            <input type="text" required="">
+                            <input type="text" name="entry.348754521" required="" >
                             <label>Last Name</label>
                         </div>
                     </div>
                     <div class="name">
                         <div class="field">
-                            <input type="text" required="">
+                            <input type="text" name="entry.384156674" required="">
                             <label>Phone Number</label>
                         </div>
                         <div class="field">
-                            <input type="text" required="">
+                            <input type="text" name="entry.610256641" required="" >
                             <label>Gmail</label>
                         </div>
                     </div>
                     <label>Message Content</label>
-                    <textarea></textarea>
+                    <textarea name="entry.1341351702"></textarea>
                     <button type="submit">SUBMIT</button>
                 </form>
             </div>
         </div>
-            
-        </div>
+        <footer style="background: #0007;display: flex;justify-content: center;align-items: center;height: 40px;color: #fff;">
+            Created by : Ankit Podder
+        </footer>
     </section>
 
 
