@@ -7,7 +7,7 @@
 .contact .form-conainer{
     position: relative;
     width: 1000px;
-    height: 530px;
+    min-height: 530px;
     display: block;
     margin: 0 auto;
 }
@@ -71,7 +71,7 @@
 .contact .form-conainer form{
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background: #0001;
     backdrop-filter: blur(5px);
     transform: translateX(100px);
@@ -117,12 +117,12 @@ body.night .contact .form-conainer form > textarea{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px 0 30px;
 }
 .contact .form-conainer form div.name div.field{
     position: relative;
     line-height: 40px;
     width: 45%;
+    margin: 20px 0;
 }
 .contact .form-conainer form div.name div.field input{
     position: relative;
@@ -198,4 +198,73 @@ body.night .contact .form-conainer form div.name div.field label{
 }
 .contact .form-conainer .details .link-daat i:hover{
     color: #fff;
+}
+
+/* make the contact section responsiveness */
+@media screen and (max-width : 1280px){
+    #main > div.contact > div > form{
+        transform: translateX(60px);
+    }
+    #main > div.contact > div > div{
+        transform: translate(-90px , -50%);
+    }
+}
+@media screen and (max-width : 1230px){
+    .contact .form-conainer{
+        width: 80%;
+    }
+}
+@media screen and (max-width : 1040px){
+    #main > div.contact > div > form{
+        padding-right: 40px;
+    }    
+    #main > div.contact > div > div {
+        width: 250px;
+        word-break: break-all;
+        transform: translate(-65px, -50%);
+    }
+}
+@media screen and (max-width : 860px){
+    #main > div.contact > div > form > div{
+        flex-direction: column;
+    }
+    #main > div.contact > div > form > div > div{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 740px){
+    #main > div.contact > div > div{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0 , 0);
+        width: 100%;
+    }
+    #main > div.contact > div > form{
+        position: relative;
+        margin-top: 30px;
+        transform: translate(0,0);
+        padding: 30px 40px;
+    }
+}
+@media screen and (max-width : 440px){
+    #main > div.contact{
+        padding: 0 5% 50px;
+    }
+    #main > div.contact > div{
+        padding: 0;
+        width: 100%;
+    }
+    #main > div.contact > div > div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 375px){
+    #main > div.contact > div > form{
+        padding: 20px;
+    }
+    #main > div.contact > div > form > button{
+        width: 100%;
+    }
 }
